@@ -1,0 +1,46 @@
+@import "_normalize.scss";
+
+
+
+$mw:1170;
+$md1:$mw+12;
+$md2:992.98;
+$md3:767.98;
+$md4:479.98;
+
+
+
+// MIXIN
+
+@mixin anim($time,$delay) {-webkit-transition: all $time ease $delay;-moz-transition: all $time ease $delay;-o-transition: all $time ease $delay;transition: all $time ease $delay;}
+
+html {
+  font-size:16px;
+  font-family: "-apple-system",BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  text-rendering: optimizeLegibility;
+}
+ // body{ zoom: 110%} 
+
+.cf:after,
+.cf:before {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  // @media (max-width: $md1+px) {max-width: 970px;}
+  @media screen and (max-width: $md2+px) {max-width: 720px;}
+  @media screen and (max-width: $md3+px) {max-width:none;padding: 0 10px;};
+}
+
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+
+
+
