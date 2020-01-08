@@ -8,8 +8,6 @@ $md2:992.98;
 $md3:767.98;
 $md4:479.98;
 
-
-
 // MIXIN
 
 @mixin anim($time,$delay) {-webkit-transition: all $time ease $delay;-moz-transition: all $time ease $delay;-o-transition: all $time ease $delay;transition: all $time ease $delay;}
