@@ -1,16 +1,7 @@
 @import "_normalize.scss";
+@import "_variables.scss";
 
 
-
-$mw:1170;
-$md1:$mw+12;
-$md2:992.98;
-$md3:767.98;
-$md4:479.98;
-
-// MIXIN
-
-@mixin anim($time,$delay) {-webkit-transition: all $time ease $delay;-moz-transition: all $time ease $delay;-o-transition: all $time ease $delay;transition: all $time ease $delay;}
 
 html {
   font-size:16px;
@@ -20,8 +11,7 @@ html {
  // body{ zoom: 110%} 
 
 .cf:after,
-.cf:before {
-  content: " ";
+.cf:before { content: " ";
   display: table; }
 
 .cf:after {
