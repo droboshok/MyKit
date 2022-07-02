@@ -34,8 +34,12 @@ h1,h2,h3,h4,h5,h6{
     grid-template-columns: repeat(12, 1fr);
     gap:20;
 }
+
+a {
+  color: inherit;
+}
 img{
-  width: 100%; 
+  max-width: 100%;
 }
 @import "_header.scss";
 @import "_main.scss";
