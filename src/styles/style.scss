@@ -1,5 +1,6 @@
 @import "_normalize.scss";
-@import "_variables.scss";
+@import "_stylesheet.scss";
+@import "_vars.scss";
 
 
 
@@ -25,7 +26,17 @@ html {
   @media screen and (max-width: $md2+px) {max-width: 720px;}
   @media screen and (max-width: $md3+px) {max-width:none;padding: 0 10px;};
 }
-
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap:20;
+}
+img{
+  width: 100%; 
+}
 @import "_header.scss";
 @import "_main.scss";
 @import "_footer.scss";
