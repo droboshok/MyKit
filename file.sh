@@ -7,6 +7,6 @@ do
     echo $x
     touch src/styles/"_"$x".scss"
     touch src/kit/"_"$x".kit"
-    echo "<!-- @import 'kit/_"$x"' -->" >> src/index.kit
-    echo '@import "_'$x'";' >> src/styles/style.scss
+    echo "<!-- @import 'kit/_"$x"' -->" >> src/_main.kit
+    echo '@import "_'$x'";' >> src/styles/_main.scss
 done
