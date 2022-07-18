@@ -1,0 +1,9 @@
+{
+   "path-intellisense.mappings": {
+		"/": "${workspaceFolder}/dest",
+		"lib": "${workspaceFolder}/lib",
+		// "dest": "${workspaceFolder}/dest/",
+		"global": "/Users/dummy/globalLibs"
+	},
+  "workbench.experimental.editSessions.enabled": true
+}
