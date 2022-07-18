@@ -20,5 +20,10 @@
   },
   "dependencies": {
     "gulp-kit-2": "^0.2.2"
-  }
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 5%",
+    "IE 10"
+  ]
 }

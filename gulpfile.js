@@ -17,7 +17,7 @@ gulp.task("sass", function() {
     .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
     .pipe(
       autoprefixer({
-        browsers: ["last 2 versions"],
+        
         cascade: false,
       })
       )
