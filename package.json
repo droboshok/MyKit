@@ -1,0 +1,24 @@
+{
+  "name": "testo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "droboshok",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.53.0",
+    "i": "^0.3.7"
+  },
+  "dependencies": {
+    "gulp-kit-2": "^0.2.2"
+  }
+}

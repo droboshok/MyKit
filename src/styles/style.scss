@@ -9,7 +9,12 @@ html {
   font-family: "-apple-system",BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
   text-rendering: optimizeLegibility;
 }
- // body{ zoom: 110%} 
+ body{ 
+  background-color: red;
+ } 
+ h1 {  
+  color: green;
+ }
 
 .cf:after,
 .cf:before { content: " ";
@@ -33,6 +38,8 @@ h1,h2,h3,h4,h5,h6{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap:30px;
+    display: flex;  
+    transition: all 0.4ms ease-in-out;
 }
 
 a {
@@ -40,6 +47,10 @@ a {
 }
 img{
   max-width: 100%;
+  @media screen and (max-width: $md2+px) { 
+    max-width: 70%; 
+    transform: translateX(-50%);
+  }
 }
 @import "_header.scss";
 @import "_main.scss";
