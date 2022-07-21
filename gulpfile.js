@@ -11,6 +11,9 @@ var svgSprite = require("gulp-svg-sprite");
   var cheerio = require("gulp-cheerio");
   var replace = require("gulp-replace");
 
+
+
+
 // sass.compiler = require("node-sass");
 gulp.task("clean", function() {
   return del(["dest/**", "!dest", "!dest/img"]);
@@ -33,7 +36,7 @@ gulp.task("sass", function() {
 
 gulp.task("kit", async function() {
   gulp
-    .src("./src/*.kit")
+    .src(["./src/**/*.kit","!./src/kit/"])
     .pipe(kit())
     .pipe(gulp.dest("dest/"))
     .pipe(browserSync.stream());
@@ -106,10 +109,21 @@ gulp.task("serve", function() {
   // gulp.watch("src/kit/**/*.html", gulp.series("fileinclude"));
   gulp.watch("./src/**/*.kit", gulp.series("kit"));
   gulp.watch("./src/svg/*.svg", gulp.series("svg"));
-  gulp.watch("dest/*.html").on("change", browserSync.reload);
+  gulp.watch("dest/**/*.html").on("change", browserSync.reload);
 });
 
-gulp.task("default", gulp.series("serve", "sass"));
+
+
+
+
+
+
+
+
+
+
+
+gulp.task("default", gulp.series("clean","kit", "sass", "serve"));
 
 
 
